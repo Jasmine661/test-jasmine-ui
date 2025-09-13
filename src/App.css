@@ -1,0 +1,438 @@
+/* 全局样式 */
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+#root {
+  width: 100%;
+}
+.App {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.App-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 30px;
+}
+
+.App-header h1 {
+  margin: 0 0 10px 0;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.App-header p {
+  margin: 0;
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+.App-main {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.App-footer {
+  background: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+  margin-top: 40px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.App-footer p {
+  margin: 5px 0;
+  opacity: 0.9;
+}
+
+/* 测试区域样式 */
+.test-section {
+  background: white;
+  margin: 20px 0;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e9ecef;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.test-section:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.test-section h2 {
+  color: #2c3e50;
+  margin: 0 0 25px 0;
+  font-size: 1.8rem;
+  font-weight: 600;
+  border-bottom: 3px solid #3498db;
+  padding-bottom: 15px;
+  position: relative;
+  text-align: center;
+}
+
+.test-section h2::after {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 3px;
+  background: #e74c3c;
+}
+
+/* 组件演示区域 */
+.component-demo {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.demo-group {
+  margin: 25px 0;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border-left: 4px solid #3498db;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.demo-group h3 {
+  color: #495057;
+  margin: 0 0 15px 0;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+/* 按钮组样式 */
+.button-group {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-group .btn {
+  margin: 0;
+}
+
+/* 输入框组样式 */
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* 进度条组样式 */
+.progress-group {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.progress-btn {
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  align-self: center;
+}
+
+.progress-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
+
+.progress-btn:active {
+  transform: translateY(0);
+}
+
+/* 标签页内容样式 */
+.tab-content {
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 6px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.tab-content h4 {
+  margin: 0 0 10px 0;
+  color: #495057;
+}
+
+.tab-content p {
+  margin: 0 0 15px 0;
+  color: #6c757d;
+  line-height: 1.5;
+}
+
+/* 图标组样式 */
+.icon-group {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 24px;
+  justify-content: center;
+}
+
+.icon-group .jasmine-icon {
+  transition: transform 0.2s ease;
+}
+
+.icon-group .jasmine-icon:hover {
+  transform: scale(1.2);
+}
+
+/* 过渡动画样式 */
+.transition-controls {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.transition-btn {
+  padding: 10px 20px;
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.transition-btn:hover {
+  background: #218838;
+  transform: translateY(-1px);
+}
+
+.transition-demo {
+  padding: 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.transition-demo h4 {
+  margin: 0 0 10px 0;
+  font-size: 1.3rem;
+}
+
+.transition-demo p {
+  margin: 0;
+  opacity: 0.9;
+}
+
+.transition-examples {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.transition-item {
+  padding: 15px 20px;
+  background: #e9ecef;
+  border-radius: 6px;
+  text-align: center;
+  font-weight: 500;
+  color: #495057;
+  min-width: 120px;
+}
+
+/* 上传拖拽区域样式 */
+.upload-dragger {
+  padding: 40px 20px;
+  text-align: center;
+  border: 2px dashed #dee2e6;
+  border-radius: 8px;
+  background: #f8f9fa;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.upload-dragger:hover {
+  border-color: #3498db;
+  background: #e3f2fd;
+}
+
+.upload-dragger p {
+  margin: 15px 0 0 0;
+  color: #6c757d;
+  font-size: 14px;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .App {
+    padding: 10px;
+  }
+  
+  .App-header h1 {
+    font-size: 2rem;
+  }
+  
+  .test-section {
+    padding: 20px;
+    margin: 15px 0;
+  }
+  
+  .button-group {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .button-group .btn {
+    width: 100%;
+    margin: 5px 0;
+  }
+  
+  .icon-group {
+    justify-content: center;
+  }
+  
+  .transition-examples {
+    flex-direction: column;
+  }
+  
+  .demo-group {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .App-header {
+    padding: 30px 15px;
+  }
+  
+  .App-header h1 {
+    font-size: 1.8rem;
+  }
+  
+  .test-section h2 {
+    font-size: 1.5rem;
+  }
+  
+  .icon-group {
+    font-size: 20px;
+    gap: 15px;
+  }
+}
+
+/* 确保组件样式正确显示 */
+.jasmine-upload-component,
+.jasmine-tabs-nav,
+.jasmine-menu,
+.jasmine-progress-bar,
+.alert {
+  margin: 10px 0;
+}
+
+/* 自定义滚动条 */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* 动画效果 */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.test-section {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+/* 代码块样式（如果有的话） */
+code {
+  background: #f8f9fa;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-family: 'Courier New', monospace;
+  font-size: 0.9em;
+  color: #e83e8c;
+}
+
+/* 链接样式 */
+a {
+  color: #3498db;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #2980b9;
+  text-decoration: underline;
+}
