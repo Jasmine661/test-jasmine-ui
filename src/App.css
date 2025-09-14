@@ -162,6 +162,19 @@ body, html {
   margin: 0 auto;
 }
 
+/* 修复 Input 组件在 input-group 中的显示问题 */
+.input-group .jasmine-input-wrapper {
+  margin: 0 !important;
+  display: flex !important;
+  align-items: stretch !important;
+}
+
+.input-group .jasmine-input-group-prepend,
+.input-group .jasmine-input-group-append {
+  display: flex !important;
+  flex-shrink: 0 !important;
+}
+
 /* 进度条组样式 */
 .progress-group {
   display: flex;
