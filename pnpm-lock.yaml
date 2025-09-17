@@ -4,13 +4,16 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+overrides:
+  jasmine661-ui: link:../../../../AppData/Local/pnpm/global/5/node_modules/jasmine661-ui
+
 importers:
 
   .:
     dependencies:
-      jasmine-ui:
-        specifier: file:..\jasmine-ui
-        version: file:../jasmine-ui(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
+      jasmine661-ui:
+        specifier: link:../../../../AppData/Local/pnpm/global/5/node_modules/jasmine661-ui
+        version: link:../../../../AppData/Local/pnpm/global/5/node_modules/jasmine661-ui
       react:
         specifier: ^19.1.1
         version: 19.1.1
@@ -944,7 +947,7 @@ packages:
   isexe@2.0.0:
     resolution: {integrity: sha512-RHxMLp9lnKHGHRng9QFhRCMbYAcVpn69smSGcq3f36xjgVVWThj4qqLbTLlq7Ssj8B+fIQ1EuCEGI2lKsyQeIw==}
 
-  jasmine-ui@file:../jasmine-ui:
+  jasmine661-ui@file:../jasmine-ui:
     resolution: {directory: ../jasmine-ui, type: directory}
     peerDependencies:
       react: '>=16.8.0'
@@ -2132,7 +2135,7 @@ snapshots:
 
   isexe@2.0.0: {}
 
-  jasmine-ui@file:../jasmine-ui(react-dom@19.1.1(react@19.1.1))(react@19.1.1):
+  jasmine661-ui@file:../jasmine-ui(react-dom@19.1.1(react@19.1.1))(react@19.1.1):
     dependencies:
       '@fortawesome/fontawesome-svg-core': 6.7.2
       '@fortawesome/free-solid-svg-icons': 6.7.2
@@ -2140,6 +2143,7 @@ snapshots:
       async-validator: 4.2.5
       axios: 1.12.1
       classnames: 2.5.1
+      jasmine661-ui: link:../../../../AppData/Local/pnpm/global/5/node_modules/jasmine661-ui
       lodash-es: 4.17.21
       normalize.css: 8.0.1
       react: 19.1.1
